@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Banger</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-google-blue {
+            background-color: #4285F4;
+        }
+        .bg-google-gray {
+            background-color: #F1F3F4;
+        }
+        .button-google {
+            background-color: #4285F4;
+            color: #fff;
+        }
+        .button-google:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body class="bg-google-gray flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-bold text-gray-900">Sign in</h1>
+            <p class="text-gray-600">to continue to Banger</p>
+        </div>
+        <form action="/login" method="POST">
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email or phone</label>
+                <input type="text" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" name="password" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+            </div>
+            <button type="submit" class="w-full py-2 px-4 rounded-md button-google text-center text-lg font-semibold">Sign in</button>
+        </form>
+        <div class="text-center mt-6">
+            <p class="text-sm text-gray-600">Forgot your password? <a href="#" class="text-blue-600 hover:underline">Reset it</a></p>
+        </div>
+        <div class="text-center mt-4">
+            <p class="text-sm text-gray-600">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Create one</a></p>
+        </div>
+    </div>
+</body>
+</html>
