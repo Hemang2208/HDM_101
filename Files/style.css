@@ -12,6 +12,10 @@ body {
     font-family: 'Arial', sans-serif; /* Change font family */
 }
 
+#OWNER {
+    margin-left: 1.25rem;
+}
+
 h1 {
     color: #2d3748; /* Darker gray for headings */
     margin-bottom: 1rem; /* Space below heading */
